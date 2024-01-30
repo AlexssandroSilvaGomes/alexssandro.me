@@ -1,8 +1,20 @@
-# React + Vite
+# Alexssandro.me
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Olá! Bem vindo ao meu portfólio! Aqui você encontrará projetos, ferramentas e conhecerá um pouco mais sobre quem eu sou. Você pode acessá-lo em [alexssandro.me](https://alexssandro-me.vercel.app/).
 
-Currently, two official plugins are available:
+![](./public/screenshot.PNG)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Tecnologia utilizada
+
+- React
+- HTML5
+- CSS3
+- JavaScript
+- Markdown
+- Responsividade
+- API
+
+# LightHouse
+
+![](./public/lighthouse.PNG)
+
