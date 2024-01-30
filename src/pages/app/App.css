@@ -1,0 +1,28 @@
+.app {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-areas: 
+    "menu main";
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.main {
+    grid-area: main;
+}
+
+.dark-theme,
+.dark-theme a {
+    background-color: var(--dark-theme);
+    color: var(--default-color);
+}
+
+.light-theme,
+.light-theme a {
+    background-color: var(--light-theme);
+    color: var(--contrast-color);
+}

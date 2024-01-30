@@ -1,0 +1,40 @@
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, p {
+    font-size: 1rem;
+    color: var(--contrast-color);
+    font-weight: 600;
+    font-style: normal;
+}
+
+ul, li {
+    list-style: none;
+}
+
+:root {
+    --default-color: #F8F9FA;
+    --contrast-color: #171717;
+    --dark-theme: #171717;
+    --light-theme: #F8F9FA;
+    --default-button: #E9ECEF;
+    --contrast-button: #212121;
+    --secondary-color: #212529;
+    --default-icon: #FFF;
+    --contrast-icon: #000;
+}

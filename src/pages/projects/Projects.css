@@ -1,0 +1,54 @@
+.projects {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 2rem 6rem;
+}
+
+.projects_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.projects_header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--default-color);
+    margin-bottom: 1rem;
+}
+
+.projects_header p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--default-color);
+    opacity: .8;
+}
+
+.projects_header p a {
+    display: inline;
+    border: none;
+    opacity: .8;
+    transition: .2s;
+}
+
+.projects_header p a:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.projects_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
