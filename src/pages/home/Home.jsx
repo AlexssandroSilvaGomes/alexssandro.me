@@ -18,7 +18,7 @@ import './Home.css'
 const Home = () => {
   const reactVite = ["ReactJS", "Vite", "HTML", "CSS", "JavaScript"]
   const api = ["HTML", "CSS", "JavaScript", "Api"]
-  const [enable, setEnable] = useState(false)
+  const [enable] = useState(false)
 
   const url = 'https://alexssandro-me.vercel.app/curriculo_alexssandro_.pdf'
 
@@ -50,13 +50,13 @@ const Home = () => {
       </div>
 
       <div className="sobre">
-        <ContentHeader title={"Sobre mim"} link={"sobre-mim"} text={"Saber mais"} />
+        <ContentHeader title={"Sobre mim"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
         <p>Oi, me chamo Alexssandro, sou desenvolvedor fullstack recém formado com foco em desenvolvimento web. Apesar de não ter experiência, tive a oportunidade de participar de projetos acadêmicos complexos, como o desenvolvimento de aplicativos, softwares simples e sites. Sou formado em Técnico em Desenvolvimento de Sistemas pelo Senai e atualmente estou cursando Análise e Desenvolvimento de Sistemas na FATEC. Tenho grande conhecimento em NodeJS e ReactJS.</p>
       </div>
 
       <div className="infos">
         <div className="formacao">
-          <ContentHeader title={"Formação Acadêmica"} link={"sobre-mim"} text={"Saber mais"} />
+          <ContentHeader title={"Formação Acadêmica"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
           <Formation
             img={Fatec}
             title={"Fatec - Carapicuíba"}
@@ -82,7 +82,7 @@ const Home = () => {
         </div>
 
         <div className="experiencias">
-          <ContentHeader title={"Experiências"} link={"sobre-mim"} text={"Saber mais"} />
+          <ContentHeader title={"Experiências"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
           <div className="experiencias--text">
             <p>Ainda não tenho nenhuma experiência relevante!</p>
           </div>
@@ -90,7 +90,7 @@ const Home = () => {
       </div>
 
       <div className="projetos-home">
-        <ContentHeader title={"Projetos"} link={"projetos"} text={"Ver todos"} />
+        <ContentHeader title={"Projetos"} link={"projetos"} text={"Ver todos"} page={"projetos"}/>
 
         <div className="projetos">
 

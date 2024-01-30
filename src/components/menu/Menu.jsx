@@ -17,7 +17,6 @@ import './Menu.css'
 
 const Menu = () => {
   const {page, setPage} = useContext(ThemeContext)
-  console.log(page);
 
   return (
     <div className="menu">
@@ -25,7 +24,7 @@ const Menu = () => {
       <nav>
         <ul>
           <li>
-            <Link className={`page ${page === "inicio" ? "current" : " "}`} to="/" onClick={() => setPage("inicio")}>
+            <Link className={`${page === "inicio" ? "current" : "button"}`} to="/" onClick={() => setPage("inicio")}>
               <AiOutlineHome />
               Início
             </Link>
@@ -37,20 +36,20 @@ const Menu = () => {
         <ul>
           <li>
 
-            <Link className={`page ${page === "sobre" ? "current" : " "}`} to="/sobre-mim" onClick={() => setPage("sobre")}>
+            <Link className={`${page === "sobre" ? "current" : "button"}`} to="/sobre-mim" onClick={() => setPage("sobre")}>
               <PiBookOpenBold />
               Sobre mim
             </Link>
           </li>
           <li>
-            <Link className={`page ${page === "projetos" ? "current" : " "}`} to="/projetos" onClick={() => setPage("projetos")}>
+            <Link className={`${page === "projetos" ? "current" : "button"}`} to="/projetos" onClick={() => setPage("projetos")}>
               <GoFileDirectory />
               Projetos
             </Link>
           </li>
           <li>
 
-            <Link className={`page ${page === "skills" ? "current" : " "}`} to="tecnologias-e-ferramentas" onClick={() => setPage("skills")}>
+            <Link className={`${page === "skills" ? "current" : "button"}`} to="tecnologias-e-ferramentas" onClick={() => setPage("skills")}>
               <MdOutlineComputer />
               Tecnologias e Ferramentas
             </Link>
@@ -61,7 +60,7 @@ const Menu = () => {
 
         <ul>
           <li>
-            <Link className="page" to="https://github.com/AlexssandroSilvaGomes" target="_blank">
+            <Link className="button" to="https://github.com/AlexssandroSilvaGomes" target="_blank">
               <RiGithubLine />
               Github
               <RiExternalLinkFill className="external" />
@@ -69,7 +68,7 @@ const Menu = () => {
           </li>
           <li>
 
-            <Link className="page" to="https://www.linkedin.com/in/alexssandro-gomes-6461bb151/" target="_blank">
+            <Link className="button" to="https://www.linkedin.com/in/alexssandro-gomes-6461bb151/" target="_blank">
               <SlSocialLinkedin />
               Linkedin
               <RiExternalLinkFill className="external" />

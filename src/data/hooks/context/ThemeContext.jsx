@@ -5,7 +5,7 @@ export const ThemeContext = createContext()
 export const ThemeProvider = ({children}) => {
 
     const [theme, setTheme] = useState("dark")
-    const [page, setPage] = useState("Home")
+    const [page, setPage] = useState("inicio")
 
     const toggleTheme = () => {
         setTheme(theme === "light" ? "dark" : "light")

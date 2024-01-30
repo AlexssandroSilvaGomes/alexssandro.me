@@ -6,9 +6,10 @@
     width: 380px;
     height: fit-content;
     gap: 20px;
+    position: relative;
 }
 
-.projeto img {
+.projeto_img {
     width: 100%;
     border-radius: 5px;
 }

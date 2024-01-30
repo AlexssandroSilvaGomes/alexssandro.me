@@ -14,7 +14,7 @@
     font-size: 1rem;
 }
 
-.page {
+.button {
     max-width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -26,19 +26,34 @@
     opacity: .8;
 }
 
-.page .external {
-   margin-left: auto;
-}
-
-.page:hover {
-    border: none;
+.menu .current {
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 5px;
+    gap: 10px;
+    color: var(--default-color);
     background-color: var(--contrast-button);
     border-radius: 5px;
     opacity: 1;
+}
+
+.button .external {
+   margin-left: auto;
+}
+
+.button:hover {
+    border: none;
+    background-color: var(--contrast-button);
+    border-radius: 5px;
+}
+
+.menu  .current:hover {
     cursor: pointer;
 }
 
-.menu li a:hover > svg {
+.menu .button:hover > svg {
     fill: var(--default-icon);
     width: 1.2em;
     height: 1.2em;
