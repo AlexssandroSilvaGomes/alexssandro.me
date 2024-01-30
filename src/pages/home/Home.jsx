@@ -20,7 +20,7 @@ const Home = () => {
   const api = ["HTML", "CSS", "JavaScript", "Api"]
   const [enable, setEnable] = useState(false)
 
-  const url = 'http://localhost:5173/curriculo_alexssandro_.pdf'
+  const url = 'https://alexssandro-me.vercel.app/curriculo_alexssandro_.pdf'
 
   const downloadFile = (url) => {
     const fileName = url.split('/').pop()
