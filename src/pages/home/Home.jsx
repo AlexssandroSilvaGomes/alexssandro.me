@@ -38,7 +38,7 @@ const Home = () => {
       <div className="header">
         <img src={Foto2} alt="foto mamaco" />
         <div className="content">
-          <h3>Alexssandro Gomes</h3>
+          <h3></h3>
           <div className="skills">
             <p>ReactJS</p>
             <p>HTML</p>

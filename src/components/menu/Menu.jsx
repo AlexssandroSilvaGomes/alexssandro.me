@@ -16,7 +16,7 @@ import './Menu.css'
 
 
 const Menu = () => {
-  const {page, setPage} = useContext(ThemeContext)
+  const {page, handlePage} = useContext(ThemeContext)
 
   return (
     <div className="menu">
@@ -24,7 +24,7 @@ const Menu = () => {
       <nav>
         <ul>
           <li>
-            <Link className={`${page === "inicio" ? "current" : "button"}`} to="/" onClick={() => setPage("inicio")}>
+            <Link className={`${page === "inicio" ? "current" : "button"}`} to="/" onClick={() => handlePage("inicio")}>
               <AiOutlineHome />
               Início
             </Link>
@@ -36,20 +36,20 @@ const Menu = () => {
         <ul>
           <li>
 
-            <Link className={`${page === "sobre" ? "current" : "button"}`} to="/sobre-mim" onClick={() => setPage("sobre")}>
+            <Link className={`${page === "sobre" ? "current" : "button"}`} to="/sobre-mim" onClick={() => handlePage("sobre")}>
               <PiBookOpenBold />
               Sobre mim
             </Link>
           </li>
           <li>
-            <Link className={`${page === "projetos" ? "current" : "button"}`} to="/projetos" onClick={() => setPage("projetos")}>
+            <Link className={`${page === "projetos" ? "current" : "button"}`} to="/projetos" onClick={() => handlePage("projetos")}>
               <GoFileDirectory />
               Projetos
             </Link>
           </li>
           <li>
 
-            <Link className={`${page === "skills" ? "current" : "button"}`} to="tecnologias-e-ferramentas" onClick={() => setPage("skills")}>
+            <Link className={`${page === "skills" ? "current" : "button"}`} to="tecnologias-e-ferramentas" onClick={() => handlePage("skills")}>
               <MdOutlineComputer />
               Tecnologias e Ferramentas
             </Link>

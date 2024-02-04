@@ -5,11 +5,11 @@ import { useContext } from "react";
 import './ContentHeader.css'
 
 const ContentHeader = ({title, link, text, page}) => {
-  const {setPage} = useContext(ThemeContext)
+  const {handlePage} = useContext(ThemeContext)
   return (
     <div className="header-content">
             <h3>{title}</h3>
-            <Link to={link} onClick={() => setPage(page)}>{text}</Link>
+            <Link to={link} onClick={() => handlePage(page)}>{text}</Link>
           </div>
   )
 }

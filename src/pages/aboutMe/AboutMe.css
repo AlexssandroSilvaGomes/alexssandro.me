@@ -9,6 +9,35 @@
     padding: 2rem 6rem;
 }
 
+.about {
+    animation: appear .8s;
+}
+
+.about > div, .about > div > p {
+    animation: appear 1ms ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 35%;
+}
+
+.about .quem-sou {
+    animation-range: cover 10% cover 30%;
+}
+
+.about .interesses-pessoais, .about .interesses-pessoais p {
+    animation-range: cover 0% cover 20%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        translate: 150vw 0;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
 .about h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -55,6 +84,24 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    animation: appear 1ms ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+#img-1 {
+    animation-range: entry 40% cover 50%;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        clip-path: inset(0% 0% 0% 100%);
+    }
+    to {
+        opacity: 1;
+        clip-path: inset(0%);
+    }
 }
 
 .container_img img {

@@ -52,7 +52,7 @@ const AboutMe = () => {
       </div>
       <div className="quem-sou">
         <h3>Quem sou?</h3>
-        <div className="container_img">
+        <div className="container_img" id="img-1">
           <img src={Interfatecs} alt="foto da minha participação do InterFatecs com meu amigos" />
           <p>Minha participação na maratona <Link to={"https://www.interfatecs.com.br/"} target="_blank">InterFatecs</Link>. Meu time, da esquerda para direta: Eu, Pedro Henrique e Claúdio. (jun. 2023)</p>
         </div>
