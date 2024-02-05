@@ -16,13 +16,97 @@
 }
 
 .dark-theme,
-.dark-theme a {
+.dark-theme p,
+.header-content.dark-theme a::before,
+.about.dark-theme h1,
+.projects_header.dark-theme h1,
+.tecs_header.dark-theme h1 {
     background-color: var(--dark-theme);
+    color: var(--default-color);
+    border-color: var(--default-button);
+}
+
+.button.dark-theme:hover,
+.projeto-conteudo_tecs--tecs.dark-theme p,
+.tecnologia.dark-theme,
+.tecnologia.dark-theme p {
+    background-color: var(--contrast-button);
+}
+
+.button.dark-theme:hover > svg {
+    fill: var(--default-icon)
+}
+
+.current.dark-theme,
+.skills.dark-theme p {
+    background-color: var(--contrast-button);
+}
+
+.content.dark-theme h3::after {
+    background-color: var(--dark-theme);
+}
+
+.projeto-btns--visitar.dark-theme {
+    color: var(--contrast-color);
+    border-color: var(--default-button);
+    background-color: var(--default-color);
+} 
+
+.projeto-btns--codigo.dark-theme {
     color: var(--default-color);
 }
 
+.projeto-btns--codigo.dark-theme:hover {
+    color: var(--contrast-color);
+    background-color: var(--default-button);
+}
+
+
+
+
+
 .light-theme,
-.light-theme a {
+.light-theme p,
+.header-content.light-theme a::before,
+.about.light-theme h1,
+.projects_header.light-theme h1,
+.tecs_header.light-theme h1 {
     background-color: var(--light-theme);
     color: var(--contrast-color);
+    border-color: var(--contrast-button);
+}
+
+.button.light-theme:hover,
+.projeto-conteudo_tecs--tecs.light-theme p,
+.tecnologia.light-theme,
+.tecnologia.light-theme p {
+    background-color: var(--default-button);
+}
+
+.button.light-theme:hover > svg {
+    fill: var(--contrast-icon)
+}
+
+.current.light-theme,
+.skills.light-theme p {
+    background-color: var(--default-button);
+}
+
+.content.light-theme h3::after {
+    background-color: var(--light-theme);
+}
+
+.projeto-btns--visitar.light-theme {
+    color: var(--default-color);
+    border-color: var(--contrast-button);
+    background-color: var(--contrast-color);
+} 
+
+.projeto-btns--codigo.light-theme {
+    color: var(--contrast-color);
+}
+
+.projeto-btns--codigo.light-theme:hover {
+    color: var(--default-color);
+    background-color: var(--contrast-button);
 }

@@ -9,11 +9,9 @@
 .header-content h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--default-color);
 }
 .header-content a {
     font-size: .75rem;
-    color: var(--default-button);
     background-color: transparent;
     position: relative;
 }

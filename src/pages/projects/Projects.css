@@ -41,14 +41,12 @@
 .projects_header h1 {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--default-color);
     margin-bottom: 1rem;
 }
 
 .projects_header p {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--default-color);
     opacity: .8;
 }
 

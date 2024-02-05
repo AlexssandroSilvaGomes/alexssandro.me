@@ -1,5 +1,6 @@
 import Tecnology from '../../components/tecnology/Tecnology'
-import { useState } from 'react'
+import { useContext } from "react";
+import { ThemeContext } from "../../data/hooks/context/ThemeContext";
 
 //front end
 import CSS from './images/file-type-css.svg'
@@ -48,10 +49,11 @@ import VSCode from './images/visual-studio-code.svg'
 import './TecnologiasEFerramentas.css'
 
 const TecnologiasEFerramentas = () => {
+  const {theme} = useContext(ThemeContext)
 
   return (
-    <div className="tecs">
-      <div className="tecs_header">
+    <div className={`tecs ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
+      <div className={`tecs_header ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
         <h1>Tecnologias e Ferramentas</h1>
         <p>Essas são as tecnologias que me ajudaram durante meu desenvolvimento e ganho de experiência prática. Meu foco é me especializar e ter conhecimento da ferramenta ideal para o trabalho, e assim proporcionar a melhor experiência para o usuário final.</p>
       </div>

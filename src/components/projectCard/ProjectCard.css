@@ -32,7 +32,6 @@
 .projeto-conteudo p {
     font-size: .75rem;
     font-weight: 400;
-    color: var(--default-color);
 }
 
 .projeto-conteudo_tecs {
@@ -58,13 +57,12 @@
 .projeto-conteudo_tecs--tecs p {
     border: none;
     border-radius: 5px;
-    background-color: var(--contrast-button);
     padding: 4px;
 }
 
 .borderCard {
     padding: 2rem;
     border: none;
-    border: 1px solid var(--default-color);
+    border: 1px solid;
     border-radius: 10px;
 }

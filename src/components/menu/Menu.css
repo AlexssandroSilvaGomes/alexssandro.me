@@ -3,7 +3,10 @@
     width: 100%;
     padding: 1rem;
     border: none;
-    border-right: 1px solid var(--default-button);
+    border-right: 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .menu nav {
     animation: menu-appear .8s;
@@ -23,7 +26,6 @@
 .menu p {
     margin: 10px 0;
     padding: 0 5px;
-    color: var(--default-color);
     font-weight: bold;
     font-size: 1rem;
 }
@@ -35,7 +37,6 @@
     align-items: center;
     padding: 8px 5px;
     gap: 10px;
-    color: var(--default-color);
     background-color: transparent;
     opacity: .8;
 }
@@ -47,8 +48,6 @@
     align-items: center;
     padding: 8px 5px;
     gap: 10px;
-    color: var(--default-color);
-    background-color: var(--contrast-button);
     border-radius: 5px;
     opacity: 1;
 }
@@ -59,16 +58,14 @@
 
 .button:hover {
     border: none;
-    background-color: var(--contrast-button);
     border-radius: 5px;
 }
 
-.menu  .current:hover {
+.menu .current:hover {
     cursor: pointer;
 }
 
 .menu .button:hover > svg {
-    fill: var(--default-icon);
     width: 1.2em;
     height: 1.2em;
 }
@@ -78,6 +75,3 @@
     flex-direction: column;
     gap: 5px;
 }
-
-
-  

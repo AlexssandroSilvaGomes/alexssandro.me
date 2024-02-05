@@ -3,7 +3,8 @@ import Formation from "../../components/formation/Formation"
 import ContentHeader from "../../components/contentHeader/ContentHeader"
 import ProjectCard from "../../components/projectCard/ProjectCard"
 import { LuDownload } from "react-icons/lu";
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../data/hooks/context/ThemeContext";
 
 import Foto2 from './images/foto2.jpg'
 import Senai from './images/senai_image.png'
@@ -19,6 +20,7 @@ const Home = () => {
   const reactVite = ["ReactJS", "Vite", "HTML", "CSS", "JavaScript"]
   const api = ["HTML", "CSS", "JavaScript", "Api"]
   const [enable] = useState(false)
+  const {theme} = useContext(ThemeContext)
 
   const url = 'https://alexssandro-me.vercel.app/curriculo_alexssandro_.pdf'
 
@@ -33,13 +35,13 @@ const Home = () => {
   }
 
   return (
-    <div className="home">
+    <div className={`home ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
 
       <div className="header">
         <img src={Foto2} alt="foto mamaco" />
-        <div className="content">
+        <div className={`content ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
           <h3></h3>
-          <div className="skills">
+          <div className={`skills ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
             <p>ReactJS</p>
             <p>HTML</p>
             <p>CSS</p>
@@ -50,13 +52,13 @@ const Home = () => {
       </div>
 
       <div className="sobre">
-        <ContentHeader title={"Sobre mim"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
+        <ContentHeader title={"Sobre mim"} link={"sobre-mim"} text={"Saber mais"} page={"sobre-mim"}/>
         <p>Oi, me chamo Alexssandro, sou desenvolvedor fullstack recém formado com foco em desenvolvimento web. Apesar de não ter experiência, tive a oportunidade de participar de projetos acadêmicos complexos, como o desenvolvimento de aplicativos, softwares simples e sites. Sou formado em Técnico em Desenvolvimento de Sistemas pelo Senai e atualmente estou cursando Análise e Desenvolvimento de Sistemas na FATEC. Tenho grande conhecimento em NodeJS e ReactJS.</p>
       </div>
 
       <div className="infos">
         <div className="formacao">
-          <ContentHeader title={"Formação Acadêmica"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
+          <ContentHeader title={"Formação Acadêmica"} link={"sobre-mim"} text={"Saber mais"} page={"sobre-mim"}/>
           <Formation
             img={Fatec}
             title={"Fatec - Carapicuíba"}
@@ -82,7 +84,7 @@ const Home = () => {
         </div>
 
         <div className="experiencias">
-          <ContentHeader title={"Experiências"} link={"sobre-mim"} text={"Saber mais"} page={"sobre"}/>
+          <ContentHeader title={"Experiências"} link={"sobre-mim"} text={"Saber mais"} page={"sobre-mim"}/>
           <div className="experiencias--text">
             <p>Ainda não tenho nenhuma experiência relevante!</p>
           </div>

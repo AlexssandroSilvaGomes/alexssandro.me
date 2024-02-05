@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { ThemeProvider } from './data/hooks/context/ThemeContext'
 
-import './index.css'
+import './styles/index.css'
 
 import App from './pages/app/App'
 import Home from './pages/home/Home'

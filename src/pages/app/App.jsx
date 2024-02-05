@@ -8,11 +8,11 @@ import './App.css'
 
 const App = () => {
 
-    const {theme, toggleTheme} = useContext(ThemeContext)
+    const {theme} = useContext(ThemeContext)
 
   return (
     <div className={`app ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
-        <Menu className="menu" toggleTheme={toggleTheme} />
+        <Menu className="menu" />
         <Outlet className="main" />
     </div>
   )

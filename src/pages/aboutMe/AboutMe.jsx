@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useContext } from "react";
+import { ThemeContext } from "../../data/hooks/context/ThemeContext";
 
 import Formatura from './images/formatura.jpg'
 import Interfatecs from './images/interfatecs.jpg'
@@ -7,8 +9,9 @@ import Tcc from './images/tcc.jpg'
 import './AboutMe.css'
 
 const AboutMe = () => {
+  const {theme} = useContext(ThemeContext)
   return (
-    <div className="about">
+    <div className={`about ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
       <div className="detalhes">
         <h1>Sobre mim</h1>
         <ul>
@@ -50,7 +53,7 @@ const AboutMe = () => {
           </li>
         </ul>
       </div>
-      <div className="quem-sou">
+      <div className={`quem-sou ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
         <h3>Quem sou?</h3>
         <div className="container_img" id="img-1">
           <img src={Interfatecs} alt="foto da minha participação do InterFatecs com meu amigos" />

@@ -6,7 +6,6 @@
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;
-    background-color: var(--contrast-button);
     border: none;
     border-radius: 10px;
     gap: 10px;

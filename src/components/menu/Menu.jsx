@@ -13,18 +13,20 @@ import { RiGithubLine } from "react-icons/ri"; //github
 
 
 import './Menu.css'
+import ButtonTheme from "../buttonTheme/ButtonTheme";
 
 
 const Menu = () => {
   const {page, handlePage} = useContext(ThemeContext)
+  const {theme, toggleTheme} = useContext(ThemeContext)
 
   return (
-    <div className="menu">
+    <div className={`menu ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
 
       <nav>
         <ul>
           <li>
-            <Link className={`${page === "inicio" ? "current" : "button"}`} to="/" onClick={() => handlePage("inicio")}>
+            <Link className={`${page === "/" ? "current" : "button"} ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="/" onClick={() => handlePage("/")}>
               <AiOutlineHome />
               Início
             </Link>
@@ -36,20 +38,20 @@ const Menu = () => {
         <ul>
           <li>
 
-            <Link className={`${page === "sobre" ? "current" : "button"}`} to="/sobre-mim" onClick={() => handlePage("sobre")}>
+            <Link className={`${page === "sobre-mim" ? "current" : "button"} ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="/sobre-mim" onClick={() => handlePage("sobre-mim")}>
               <PiBookOpenBold />
               Sobre mim
             </Link>
           </li>
           <li>
-            <Link className={`${page === "projetos" ? "current" : "button"}`} to="/projetos" onClick={() => handlePage("projetos")}>
+            <Link className={`${page === "projetos" ? "current" : "button"} ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="/projetos" onClick={() => handlePage("projetos")}>
               <GoFileDirectory />
               Projetos
             </Link>
           </li>
           <li>
 
-            <Link className={`${page === "skills" ? "current" : "button"}`} to="tecnologias-e-ferramentas" onClick={() => handlePage("skills")}>
+            <Link className={`${page === "tecnologias-e-ferramentas" ? "current" : "button"} ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="tecnologias-e-ferramentas" onClick={() => handlePage("tecnologias-e-ferramentas")}>
               <MdOutlineComputer />
               Tecnologias e Ferramentas
             </Link>
@@ -60,7 +62,7 @@ const Menu = () => {
 
         <ul>
           <li>
-            <Link className="button" to="https://github.com/AlexssandroSilvaGomes" target="_blank">
+            <Link className={`button ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="https://github.com/AlexssandroSilvaGomes" target="_blank">
               <RiGithubLine />
               Github
               <RiExternalLinkFill className="external" />
@@ -68,7 +70,7 @@ const Menu = () => {
           </li>
           <li>
 
-            <Link className="button" to="https://www.linkedin.com/in/alexssandro-gomes-6461bb151/" target="_blank">
+            <Link className={`button ${theme === "dark" ? "dark-theme" : "light-theme"}`} to="https://www.linkedin.com/in/alexssandro-gomes-6461bb151/" target="_blank">
               <SlSocialLinkedin />
               Linkedin
               <RiExternalLinkFill className="external" />
@@ -76,6 +78,7 @@ const Menu = () => {
           </li>
         </ul>
       </nav>
+        <ButtonTheme className="btn" toggleTheme={() => toggleTheme(theme === "light" ? "dark" : "light")} isChecked={theme === "dark" ? false : true}/>
     </div>
   )
 }

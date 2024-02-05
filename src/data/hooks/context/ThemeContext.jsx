@@ -4,11 +4,12 @@ export const ThemeContext = createContext()
 
 export const ThemeProvider = ({children}) => {
 
-    const [theme, setTheme] = useState("dark")
-    const [page, setPage] = useState(window.localStorage.getItem("currentPage") === null ? "inicio" : window.localStorage.getItem("currentPage"))
-
-    const toggleTheme = () => {
-        setTheme(theme === "light" ? "dark" : "light")
+    const [theme, setTheme] = useState(window.localStorage.getItem("currentTheme") === null ? "dark" : window.localStorage.getItem("currentTheme"))
+    const [page, setPage] = useState(window.localStorage.getItem("currentPage") === null ? "/" : window.localStorage.getItem("currentPage"))
+    
+    const toggleTheme = (current) => {
+        setTheme(theme === current ? theme : current)
+        window.localStorage.setItem("currentTheme", current)
     }
 
     const handlePage = (current) => {

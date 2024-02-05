@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
-import { useState } from "react";
+import { useState, useContext } from "react";
+import { ThemeContext } from "../../data/hooks/context/ThemeContext";
 import ProjectCard from "../../components/projectCard/ProjectCard"
 
 import Dnd from './images/project-dnd.png'
@@ -13,10 +14,11 @@ const Projects = () => {
   const [enable, setEnable] = useState(true)
   const reactVite = ["ReactJS", "Vite", "HTML", "CSS", "JavaScript"]
   const api = ["HTML", "CSS", "JavaScript", "Api"]
+  const {theme} = useContext(ThemeContext)
 
   return (
-    <div className="projects">
-      <div className="projects_header">
+    <div className={`projects ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
+      <div className={`projects_header ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
         <h1>Meus Projetos</h1>
         <p>Estes são alguns dos meus projetos. Você pode encontrar esses e outros projetos no meu <Link to="https://github.com/AlexssandroSilvaGomes" target="_blank">github</Link>.</p>
       </div>
