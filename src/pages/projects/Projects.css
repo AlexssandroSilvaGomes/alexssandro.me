@@ -16,8 +16,8 @@
 
 .projects_content > div {
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: cover 0% cover 40%;
+    /*animation-timeline: view();*/
+    /*animation-range: cover 0% cover 40%;*/
 }
 
 @keyframes appear {
@@ -70,4 +70,17 @@
     width: 100%;
     flex-wrap: wrap;
     gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        padding: 1rem 3rem;
+    }
+
+    .projects_content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 }

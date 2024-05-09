@@ -15,18 +15,18 @@
 }
 .tecs h3 {
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    /* animation-timeline: view(); */
+    /* animation-range: cover 0% cover 50%; */
 }
 .tecs > div {
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: cover 0% cover 40%;
+    /* animation-timeline: view(); */
+    /* animation-range: cover 0% cover 40%; */
 }
 
-.tecs div:last-of-type {
+/* .tecs div:last-of-type {
     animation-range: cover 0% cover 30%;
-}
+} */
 
 @keyframes appear {
     from {
@@ -69,4 +69,18 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .tecs {
+        padding: 1rem 3rem;
+    }
+
+    .tecs_card {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }

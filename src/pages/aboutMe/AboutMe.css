@@ -15,17 +15,17 @@
 
 .about > div, .about > div > p {
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: cover 0% cover 35%;
+    /*animation-timeline: view();*/
+    /*animation-range: cover 0% cover 35%;*/
 }
 
-.about .quem-sou {
+/*.about .quem-sou {
     animation-range: cover 10% cover 30%;
-}
+}*/
 
-.about .interesses-pessoais, .about .interesses-pessoais p {
+/*.about .interesses-pessoais, .about .interesses-pessoais p {
     animation-range: cover 0% cover 20%;
-}
+}*/
 
 @keyframes appear {
     from {
@@ -80,8 +80,8 @@
     align-items: center;
     margin-bottom: 20px;
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: entry 0% cover 50%;
+    /*animation-timeline: view();*/
+    /*animation-range: entry 0% cover 50%;*/
 }
 
 #img-1 {
@@ -156,5 +156,9 @@
     }
 }
 
-
+@media (max-width: 768px) {
+    .about {
+        padding: 1rem 3rem;
+    }
+}
 

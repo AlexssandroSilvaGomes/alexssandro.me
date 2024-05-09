@@ -16,8 +16,8 @@
 
 .home > div {
     animation: appear 1ms ease-in-out forwards;
-    animation-timeline: view();
-    animation-range: cover 0% cover 50%;
+    /*animation-timeline: view();*/
+    /*animation-range: cover 0% cover 45%;*/
 }
 
 @keyframes appear {
@@ -31,9 +31,9 @@
     }
 }
 
-.home .projetos-home {
+/*.home .projetos-home {
     animation-range: cover 0% cover 30%;
-}
+}*/
 
 .header {
     display: flex;
@@ -225,3 +225,8 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    .home {
+        padding: 1rem 3rem;
+    }
+}

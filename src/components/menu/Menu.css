@@ -4,12 +4,38 @@
     padding: 1rem;
     border: none;
     border-right: 1px solid;
-    display: flex;
+    display:flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .menu nav {
     animation: menu-appear .8s;
+}
+
+.menu-hamburger {
+    display: none;
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.menu-hamburger a {
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+}
+
+.menu-hamburger a svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 @keyframes menu-appear {
@@ -74,4 +100,42 @@
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+@media (max-width > 768px) {
+    .menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 0 0 1rem 0;
+        justify-content: start;
+        width: 100vw;
+        gap: 5px;
+        height: fit-content;
+        border: none;
+        border-bottom: 1px solid;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+    
+    .menu .button, .menu .current {
+        margin: 0 1rem;
+    }
+
+    .menu p {
+        padding: 0 1rem;
+    }
+
+    .open {
+        display: flex;
+    }
+    
+    .closed {
+        display: none;
+    }
 }

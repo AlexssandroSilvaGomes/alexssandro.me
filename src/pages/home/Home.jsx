@@ -91,7 +91,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="projetos-home">
+      <div className="projetos-home fadeIn">
         <ContentHeader title={"Projetos"} link={"projetos"} text={"Ver todos"} page={"projetos"}/>
 
         <div className="projetos">
