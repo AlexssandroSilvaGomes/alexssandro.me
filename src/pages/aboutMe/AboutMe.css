@@ -14,7 +14,7 @@
 }
 
 .about > div, .about > div > p {
-    animation: appear 1ms ease-in-out forwards;
+    /*animation: appear 1ms ease-in-out forwards;*/
     /*animation-timeline: view();*/
     /*animation-range: cover 0% cover 35%;*/
 }
@@ -158,7 +158,7 @@
 
 @media (max-width: 768px) {
     .about {
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
     }
 }
 

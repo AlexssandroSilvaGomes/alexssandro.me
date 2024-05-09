@@ -68,12 +68,13 @@
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
     gap: 10px;
 }
 
 @media (max-width: 768px) {
     .tecs {
-        padding: 1rem 3rem;
+        padding: 1rem 1.5rem;
     }
 
     .tecs_card {

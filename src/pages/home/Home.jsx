@@ -38,17 +38,17 @@ const Home = () => {
     <div className={`home ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
 
       <div className="header">
-        <img src={Foto2} alt="foto mamaco" />
+        <img src={Foto2} alt="foto minha" />
         <div className={`content ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
           <h3></h3>
-          <div className={`skills ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
+        </div>
+        <div className={`skills ${theme === "dark" ? "dark-theme" : "light-theme"}`}>
             <p>ReactJS</p>
             <p>HTML</p>
             <p>CSS</p>
             <p>JavaScript</p>
             <p>NodeJS</p>
           </div>
-        </div>
       </div>
 
       <div className="sobre">

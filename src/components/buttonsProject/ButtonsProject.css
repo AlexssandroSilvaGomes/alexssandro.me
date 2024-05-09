@@ -8,9 +8,9 @@
 }
 
 .projeto-btns a {
-    max-width: 100%;
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 8px 5px;
     gap: 10px;
@@ -35,4 +35,12 @@
 
 .projeto-btns .projeto-btns--codigo:hover {
     cursor: pointer;
+}
+
+@Media (max-width: 768px) {
+    .projeto-btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
