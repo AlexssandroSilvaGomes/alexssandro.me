@@ -7,6 +7,7 @@ import { useState, useContext } from "react";
 import { ThemeContext } from "../../data/hooks/context/ThemeContext";
 
 import Foto2 from './images/foto2.jpg'
+import Escola from './images/escola.png'
 import Senai from './images/senai_image.png'
 import Fatec from './images/fatec-image2.jpg'
 import Dnd from '../projects/images/project-dnd.png'
@@ -72,7 +73,7 @@ const Home = () => {
             desc={"2022 - 2023 | 1 ano e 5 meses"}
           />
           <Formation
-            img={Senai}
+            img={Escola}
             title={"Desembargador Manuel Augusto Vieira Neto"}
             course={"Ensino Médio completo"}
             desc={"2018 - 2021 | 3 anos"}
